@@ -18,14 +18,13 @@ resource "aws_instance" "app_server" {
   ami                    = "ami-074cce78125f09d61"
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-063d4de04c351595f"]
-  key_name               = "dom"
+  key_name               = "personal-key"
   tags = {
     Name = var.curso
   }
 }
 
-# resource "aws_key_pair" "app_server" {
-#   key_name   = "deployer-key"
-#   public_key = ""
-# }
-
+resource "aws_key_pair" "app_server" {
+  key_name   = "personal-key"
+  public_key = var.public_key
+}

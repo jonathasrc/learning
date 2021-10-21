@@ -6,8 +6,6 @@ variable "curso" {
 variable "public_key" {
   description = "Value of the Name tag for the EC2 instance"
   type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOFwv9+PpfisgLcxs57fOXVjdaN5iq9UjgVJAjkvAAzk"
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOFwv9+PpfisgLcxs57fOXVjdaN5iq9UjgVJAjkvAAzk" 
 
 }
-
-
